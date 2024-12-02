@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Mi menú</h2>
+    <h2>Mi menu 2</h2>
+    <h2>Mi menu 3</h2>
+   
+    <button onclick="mostrardulce()">Ver dulces</button>
+    <button onclick=" calcularTotal()"> Calcular Total</button>
+    <button onclick="verificarStock()">Verificar Stock</button>
+
+    <script>
+
+        // Variables y Tipos de datos
+        let dulces = ["arroz", "brevas", "desamargado"];
+        let precios = [6000, 7000, 7000];
+        let inventarioDisponible = true;
+ 
+        function mostrardulces() {
+          let listaFrutas = frutas.join(",");
+          alert("dulces disponibles:" + listadulces);
+        }
+        
+        // Ejemplo de operadores aritmeticos 
+        function calcularTotal() {
+          let total = precios[0] + precios[1] + precios[2];
+          alert("El precio total de los dulces es: $" + total)
+        }
+     
+        function verificarinventario(){
+           let mensaje ="";
+           if (inventarioDisponible && precios.length === dulces.length) {
+                mensaje = "Todo el inventario esta disponible";
+           } else {
+               mensaje =" Algunos productos no estan disponibles";
+           }
+           alert(mensaje);
+ 
+        }     
+    <button onclic ="mostrardulces()"> ver dulces</button>
+    <button onclic ="mostrartotal()"> calcular total</button>
+    <button onclic ="verificarinventario"> verificar inventario</button>
+ 
+     </script>
+
+
+    
+</body>
+</html>
