@@ -1,0 +1,15 @@
+Explicación del código:
+
+1. HTML5:
+   - La estructura del menú se organiza en una lista desordenada (`<ul>`) con elementos de lista (`<li>`).
+   - El menú tiene enlaces (`<a>`) para cada sección, y algunos elementos como "Nosotros" y "Servicios" contienen submenús con más opciones, también definidas dentro de listas desordenadas dentro de los elementos correspondientes.
+   
+2. CSS3:
+   - Reset básico: Se eliminan márgenes y rellenos predeterminados y se configura el `box-sizing` para evitar que el tamaño de los elementos se vea afectado por márgenes y rellenos.
+   - Estilos generales: El fondo de la barra de navegación es de color oscuro (`#333`), y los enlaces tienen un color de texto blanco.
+   - Submenú: Los submenús se ocultan por defecto (`display: none`) y se muestran solo cuando el ratón pasa sobre el elemento principal (`menu li:hover .submenu`).
+   - Responsividad: Se ha añadido un `@media query` para dispositivos con un ancho de pantalla menor a 768px, haciendo que el menú se muestre de forma vertical en lugar de horizontal.
+Resultado esperado:
+- El menú se muestra horizontalmente en pantallas grandes (de escritorio).
+- En pantallas pequeñas (móviles o tablets), el menú se reorganiza verticalmente.
+- Los submenús se muestran al pasar el ratón sobre las opciones "Nosotros" y "Servicios".

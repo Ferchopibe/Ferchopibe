@@ -1,0 +1,87 @@
+/* Reset básico de márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilo del contenedor de la barra de navegación */
+nav {
+    background-color: #333;
+}
+
+/* Estilos del menú principal */
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Efecto al pasar el ratón sobre los elementos del menú */
+.menu a:hover {
+    background-color: #555;
+}
+
+/* Estilos para los submenús */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+}
+
+.submenu li a {
+    padding: 10px;
+    color: white;
+}
+
+.submenu li a:hover {
+    background-color: #666;
+}
+
+/* Mostrar submenús al pasar el ratón sobre el elemento principal */
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* Estilo para dispositivos móviles: menú en columna */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .menu li {
+        width: 100%;
+    }
+    .submenu {
+        position: static;
+        display: none;
+    }
+    .menu li:hover .submenu {
+        display: block;
+    }
+}
